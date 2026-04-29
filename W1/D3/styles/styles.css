@@ -36,6 +36,8 @@ body,input{
   background-color: var(--blanco);
   border-radius: 8px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 h2{
@@ -62,3 +64,12 @@ form{
 #logistics,#btn-container{
   grid-column: 2/3;
 }
+
+
+
+/*.log-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}*/
+

@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main id="form-container">
@@ -46,10 +49,12 @@
         <section class="card" id="logistics">
           <img src="" alt="" />
           <h2>&#128340;LOGISTICS</h2>
-          <label for="date">Date</label>
-          <input type="date" name="date" id="date" />
-          <label for="time">Time</label>
-          <input type="time" name="time" id="time" />
+          <div class="log-grid">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" />
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time" />
+          </div>
           <label for="status">Visit Status</label>
           <select name="status" id="status">
             <option value="completed">Completed</option>
@@ -92,7 +97,7 @@
           <button type="button" onclick="alert('Completed')">
             &#x1F4BE; Guardar Registro
           </button>
-          <br>
+          <br />
           <span
             ><em
               >* Information recorded is used for internal congregational
