@@ -1,0 +1,64 @@
+@import url('https://googleapis.com');
+
+/*Defining Variables and main color */
+:root{
+  --primary:#002E5D;
+  --secondary:#6C757D;
+  --tertiary:#E9ECEF;
+  --neutral: #F8F9FA;
+  --blanco:#FFFFFF;
+  --tracking-amplio:0.15em;
+  --tam-titulo:0.85rem;
+
+}
+
+#form-container {
+  font-family: "Public Sans", sans-serif;
+ 
+}
+
+h1,button{
+  color: var(--primary);
+}
+
+h2,label,span{
+  color: var(--secondary);
+}
+
+.card,input{
+  border: 2px var(--tertiary) solid;
+}
+
+body,input{
+  background-color: var(--neutral);
+}
+.card{
+  background-color: var(--blanco);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+h2{
+  letter-spacing: var(--tracking-amplio);
+  font-size: var(--tam-titulo);
+}
+
+/* Size, aligning, other format*/
+
+#location iframe{
+  width: 200px;
+  height: 200px;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#member-info,#vist{
+  grid-column: 1/2;
+}
+
+#logistics,#btn-container{
+  grid-column: 2/3;
+}

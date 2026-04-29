@@ -1,0 +1,21 @@
+body{
+    font-family: "Segoe UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    padding: 40px;
+}
+
+form{
+    max-width: 450px;
+    padding: 40px;
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Registration</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+    <main id="form-container">
+      <h1>New Visit Registration</h1>
+      <span
+        >Documenting pastoral care and fellowship visits across the Stake.</span
+      >
+      <form action="">
+        <section class="card" id="member-info">
+          <img src="" alt="" />
+          <h2>&#128100;MEMBER INFORMATION</h2>
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Enter member name"
+          />
+
+          <label for="adress">Adress</label>
+          <input
+            type="adress"
+            id="adress"
+            name="address"
+            placeholder="&#128506;Street, City, Postal Code"
+          />
+          <label for="phone">Phone Number</label>
+          <input
+            type="phone"
+            id="phone"
+            name="address"
+            placeholder="&#9742;+1(555)000-0000"
+          />
+        </section>
+
+        <section class="card" id="logistics">
+          <img src="" alt="" />
+          <h2>&#128340;LOGISTICS</h2>
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date" />
+          <label for="time">Time</label>
+          <input type="time" name="time" id="time" />
+          <label for="status">Visit Status</label>
+          <select name="status" id="status">
+            <option value="completed">Completed</option>
+            <option value="in-progress">In Progress</option>
+            <option value="pending">Pending</option>
+          </select>
+          <label for="registar">Registar Name</label>
+          <input
+            type="text"
+            name="registar"
+            id="registar"
+            placeholder="Full name of registar"
+          />
+        </section>
+        <section class="card" id="visits">
+          <img src="" alt="" />
+          <h2>&#128196;VISIT DETAILS</h2>
+          <label for="comm-obs">Comments & Observations</label>
+          <textarea
+            name="comm-obs"
+            id="comm-obs"
+            rows="5"
+            cols="50"
+            placeholder="Describe the visit context, needs identified, or spiritual messages shared..."
+          ></textarea>
+        </section>
+        <div id="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.5326360884906!2d-99.85431419999999!3d49.8324487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52e7913ca9d38e6b%3A0x998c112ce10b03fe!2sMaple%20Leaf%20Foods!5e0!3m2!1ses-419!2shn!4v1777499867009!5m2!1ses-419!2shn"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <h3>LOCATION PREVIEW</h3>
+        </div>
+        <div id="btn-container">
+          <button type="button" onclick="alert('Completed')">
+            &#x1F4BE; Guardar Registro
+          </button>
+          <br>
+          <span
+            ><em
+              >* Information recorded is used for internal congregational
+              support only.</em
+            ></span
+          >
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
