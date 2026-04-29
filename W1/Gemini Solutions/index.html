@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Visit Registration</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="form-container">
+      <header>
+        <h1>New Visit Registration</h1>
+        <p class="subtitle">
+          Documenting pastoral care and fellowship visits across the Stake.
+        </p>
+      </header>
+
+      <form>
+        <div class="column">
+          <section class="card" id="member-info">
+            <h2>👤 MEMBER INFORMATION</h2>
+            <div class="input-group">
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Enter member name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                placeholder="&#128506; Street, City, Postal Code"
+              />
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="&#9742; +1 (555) 000-0000"
+              />
+            </div>
+          </section>
+
+          <section class="card" id="visit-details">
+            <h2>📄 VISIT DETAILS</h2>
+            <div class="input-group">
+              <label for="comm-obs">Comments & Observations</label>
+              <textarea
+                id="comm-obs"
+                rows="5"
+                placeholder="Describe the visit context..."
+              ></textarea>
+            </div>
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="card" id="logistics">
+            <h2>&#128340; LOGISTICS</h2>
+            <div class="logistics-row">
+              <div class="input-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" />
+              </div>
+              <div class="input-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="status">Visit Status</label>
+              <select id="status">
+                <option value="completed">Completed</option>
+                <option value="in-progress">In Progress</option>
+                <option value="pending">Pending</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="registrar">Registrar Name</label>
+              <input
+                type="text"
+                id="registrar"
+                placeholder="Full name of registrar"
+              />
+            </div>
+          </section>
+
+          <div id="location-preview" class="card">
+            <div class="map-placeholder">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.5326360884906!2d-99.85431419999999!3d49.8324487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52e7913ca9d38e6b%3A0x998c112ce10b03fe!2sMaple%20Leaf%20Foods!5e0!3m2!1ses-419!2shn!4v1777499867009!5m2!1ses-419!2shn"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <span class="map-tag">LOCATION PREVIEW</span>
+            </div>
+          </div>
+
+          <div id="btn-container">
+            <button type="submit" class="btn-save">💾 Guardar Registro</button>
+            <p class="note">
+              <em
+                >* Information recorded is used for internal congregational
+                support only.</em
+              >
+            </p>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

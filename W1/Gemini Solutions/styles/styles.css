@@ -1,0 +1,128 @@
+:root {
+  --primary: #002e5d;
+  --secondary: #6c757d;
+  --tertiary: #e9ecef;
+  --neutral: #f8f9fa;
+  --blanco: #ffffff;
+  --tracking-amplio: 0.15em;
+  --tam-titulo: 0.85rem;
+}
+
+/* Reset y Base */
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--neutral);
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+#form-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+h1 { color: var(--primary); margin-bottom: 5px; }
+.subtitle { color: var(--secondary); margin-bottom: 30px; font-size: 0.95rem; }
+
+/* Grid Principal: 2 Columnas */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Tarjetas (Cards) */
+.card {
+  background-color: var(--blanco);
+  border: 1px solid var(--tertiary);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+/* Títulos de sección (Criterio de Mayúsculas y Tracking) */
+h2 {
+  color: var(--primary);
+  font-size: var(--tam-titulo);
+  letter-spacing: var(--tracking-amplio);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Labels y Inputs (Labels arriba) */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  color: var(--secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  background-color: var(--neutral);
+  border: 1px solid var(--tertiary);
+  border-radius: 6px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* Logistics Row: Date y Time en la misma fila */
+.logistics-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Botón y Nota */
+.btn-save {
+  background-color: var(--primary);
+  color: var(--blanco);
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.note {
+  color: var(--secondary);
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Location Preview (Placeholder) */
+.map-placeholder {
+  background-color: var(--tertiary);
+  height: 150px;
+  border-radius: 6px;
+  position: relative;
+  background-image: url('https://via.placeholder.com/400x150?text=Map+Preview'); /* Simulación */
+  background-size: cover;
+}
+
+.map-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  padding: 4px 8px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
