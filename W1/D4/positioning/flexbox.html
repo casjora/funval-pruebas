@@ -1,0 +1,34 @@
+<style>
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .header-absolute {
+    position: relative; /* Anchor */
+    background: #d0d0d0;
+    height: 50px; /* You HAVE to set a height because absolute kids don't give it any */
+  }
+
+  .abs-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+</style>
+
+<!-- FLEXBOX: Clean, automatic spacing -->
+<div class="header-flex">
+  <span>Logo</span>
+  <button>Login</button>
+</div>
+
+<!-- ABSOLUTE: Danger Zone! If "Logo" gets too long, it will go UNDER the button -->
+<div class="header-absolute">
+  <span>Logo (Imagine if this text was very, very long...)</span>
+  <button class="abs-btn">Login</button>
+</div>
