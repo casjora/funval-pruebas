@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .stage {
+    position: relative;
+    height: 400px;
+    background: #f0f0f0;
+    padding: 50px;
+    border: 2px black solid;
+  }
+
+  .card {
+    width: 150px;
+    height: 200px;
+    position: absolute; /* Needed for z-index to work! */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  /* Task: Assign z-index values to reorder these */
+  
+  .red-card {
+    background: #ff5f57;
+    top: 50px;
+    left: 50px;
+    z-index: 10; /* Lowest */
+  }
+
+  .blue-card {
+    background: #2e86de;
+    top: 80px;
+    left: 100px;
+    z-index: 100; /* Change this */
+  }
+
+  .green-card {
+    background: #28c840;
+    top: 110px;
+    left: 150px;
+    z-index: 1000; /* Change this */
+  }
+
+  /* This should always be on top of everything */
+  .notification-badge {
+    position: absolute;
+    color:#f0f0f0;
+    top: 40px;
+    left: 130px;
+    background: black;
+    padding: 10px;
+    border-radius: 50px;
+    z-index: 10000; /* Change this */
+  }
+</style>
+</head>
+<body>
+
+  <div class="stage">
+    <div class="card red-card">Card 1</div>
+    <div class="card blue-card">Card 2</div>
+    <div class="card green-card">Card 3</div>
+    <div class="notification-badge">Priority Info</div>
+  </div>
+
+</body>
+</html>
