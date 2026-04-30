@@ -57,7 +57,7 @@ form{
   grid-template-columns: 1fr 1fr;
 }
 
-#member-info,#vist{
+#member-info,#visits{
   grid-column: 1/2;
 }
 
