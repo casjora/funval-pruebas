@@ -1,0 +1,43 @@
+.contenedor {
+  border: 2px solid #333;
+  padding: 20px;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background: #3498db;
+  margin: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.relativa {
+  position: relative;
+  top: 15px;
+  left: 30px;
+  background: #e74c3c;
+}
+
+.contenedor {
+  position: relative; /* Crea el contexto de posicionamiento */
+  width: 400px;
+  height: 300px;
+  background: #ecf0f1;
+}
+
+.hijo-absoluto {
+  position: absolute;
+  top: 20px;     /* 20px desde el TOP del contenedor */
+  right: 30px;   /* 30px desde el RIGHT del contenedor */
+  width: 100px;
+  height: 100px;
+  background: #9b59b6;
+}
+
+.centrado-absoluto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ajusta por su propio tamaño */
+}

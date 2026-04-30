@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-section {
+    height: 600px; /* Gives us room to scroll */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .sticky-header {
+    /* THE MAGIC */
+    position: sticky;
+    top: 0; /* Sticks to the very top of the screen */
+    
+    background-color: #28c840; /* Green */
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .footer-spacer {
+    height: 800px;
+    background-color: #eee;
+  }
+</style>
+</head>
+<body>
+
+  <div class="content-section">
+    <h1>Scroll Down!</h1>
+    <p>This is a normal section. Keep scrolling to find the sticky header.</p>
+  </div>
+
+  <!-- This container holds the sticky header -->
+  <div style="background-color: #fff; border: 2px solid #333;">
+    
+    <div class="sticky-header">
+      I am Sticky! I'll stay at the top while you read this section.
+    </div>
+
+    <div style="padding: 20px;">
+      <p>This is the content inside the <strong>same parent</strong> as the sticky header.</p>
+      <p>The header will follow you as long as you are scrolling through this white box.</p>
+      <p style="margin-top: 400px;">Keep scrolling...</p>
+      <p style="margin-top: 400px;">Almost at the end of the parent container...</p>
+    </div>
+    
+  </div> <!-- The parent ends here -->
+
+  <div class="footer-spacer">
+    <h2>The parent ended.</h2>
+    <p>Notice how the sticky header stopped? It won't follow you into this grey section because it can't leave its parent's boundaries.</p>
+  </div>
+
+</body>
+</html>
