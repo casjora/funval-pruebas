@@ -1,0 +1,42 @@
+.contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite múltiples líneas */
+  
+  /* flex-wrap: nowrap;       Por defecto: todo en una línea */
+  /* flex-wrap: wrap-reverse; Envuelve en dirección inversa */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo a la izq, menú a la der */
+  align-items: center; /* Centrado vertical */
+  padding: 1rem 2rem;
+  background-color: #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem; /* Espacio entre items del menú */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 200px 200px 200px; /* 3 columnas de 200px */
+  
+  /* Métodos alternativos: */
+  grid-template-columns: 1fr 1fr 1fr;      /* 3 columnas iguales (fracción) */
+}
