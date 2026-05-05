@@ -1,7 +1,18 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import {resolve} from 'path'
+
 export default defineConfig({
   plugins: [
     tailwindcss(),
-  ],base: '/mini-proyecto-w2/',
+  ],
+  base: '/mini-proyecto-w2/',
+  build: {
+    rollupOptions:{
+      input:{
+        main:resolve(__dirname,'index.html'),
+
+      }
+    }
+  }
 })
