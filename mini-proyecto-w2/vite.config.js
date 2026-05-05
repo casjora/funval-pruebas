@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
-import {resolve} from 'path'
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [
@@ -8,11 +8,10 @@ export default defineConfig({
   ],
   base: '/mini-proyecto-w2/',
   build: {
-    rollupOptions:{
-      input:{
-        main:resolve(__dirname,'index.html'),
-
-      }
-    }
-  }
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
+    },
+  }, // El paréntesis cerraba antes de tiempo aquí
 })
